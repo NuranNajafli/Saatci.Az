@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaatciAZ</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
+
+
+<body>
+    <div id="openColorDiv">
+        <div>
+            <a style="cursor: pointer;color: black !important;" onclick="showColors()"> <i
+                    class="fas fa-fill-drip iconChange"></i></a>
+        </div>
+        <div id="changeColor">
+            <div onclick="changeColor(this.id)" class="small" id="gold"></div>
+            <div onclick="changeColor(this.id)" class="small" id="blue"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light main_nav" id="mainNav">
+        <a class="navbar-brand brand_name" href="./index.html">SaatçıAz</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon bg-white"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link home_a active list" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link about_a list" href="./html/about.html">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link contact_a list " href="./html/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link shop_a " href="#">
+                        <div id="basket"><i class="fal fa-shopping-bag"></i> <span
+                                id="badgeForShopping">0</span></i><span class="list">Basket</span></div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link sign_up list" href="#" id="myBtn"><i class="far fa-user"></i> Sign Up</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn_search my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <div id="main_sign">
+                <div class="middle">
+                    <h3>Create New Account</h3>
+
+                    <div class="d-flex justify-content-around">
+                        <div><input type="text" class="form-control" id="name" placeholder="Name"></div>
+                        <div><input type="text" class="form-control" id="surname" placeholder="Surname"></div>
+                    </div>
+                    <div>
+                        <input id="num" type="text" class="form-control " placeholder="Write e-mail address">
+                    </div>
+                    <div id="extraMail">
+
+                    </div>
+                    <div>
+                        <input id="pas" type="password" class="form-control " placeholder="New Password">
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div><select class="form-select" name="gun" id="Day">
+                                <option value="Day">Day</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="1">3</option>
+                                <option value="1">4</option>
+                                <option value="1">5</option>
+                                <option value="1">6</option>
+                                <option value="1">7</option>
+                                <option value="1">8</option>
+                                <option value="1">9</option>
+                                <option value="1">10</option>
+                                <option value="1">11</option>
+                                <option value="1">12</option>
+                                <option value="1">13</option>
+                                <option value="1">14</option>
+                                <option value="1">15</option>
+                                <option value="1">16</option>
+                                <option value="1">17</option>
+                                <option value="1">18</option>
+                                <option value="1">19</option>
+                                <option value="1">20</option>
+                                <option value="1">21</option>
+                                <option value="1">22</option>
+                                <option value="1">23</option>
+                                <option value="1">24</option>
+                                <option value="1">25</option>
+                                <option value="1">26</option>
+                                <option value="1">27</option>
+                                <option value="1">28</option>
+                                <option value="1">29</option>
+                                <option value="1">30</option>
+                                <option value="1">31</option>
+                            </select> </div>
+
+                        <div><select class="form-select" name="ay" id="Ay">
+                                <option value="ay">Months</option>
+                                <option value="1">Yan</option>
+                                <option value="2">Fev</option>
+                                <option value="1">Mart</option>
+                                <option value="1">Apr</option>
+                                <option value="1">May</option>
+                                <option value="1">iyun</option>
+                                <option value="1">Iyul</option>
+                                <option value="1">Avq</option>
+                                <option value="1">Sep</option>
+                                <option value="1">Okt</option>
+                                <option value="1">Noy</option>
+                                <option value="1">Dek</option>
+                            </select> </select></div>
+                        <div><select class="form-select" name="year" id="year">
+                                <option value="year">2021</option>
+                                <option value="1">2020</option>
+                                <option value="2">2019</option>
+                                <option value="1">2018</option>
+                                <option value="1">2017</option>
+                                <option value="1">2016</option>
+                                <option value="1">2015</option>
+                                <option value="1">2014</option>
+                                <option value="1">2013</option>
+                                <option value="1">2012</option>
+                                <option value="1">2011</option>
+                                <option value="1">2010</option>
+                                <option value="1">2009</option>
+                                <option value="1">2008</option>
+                                <option value="1">2007</option>
+                                <option value="2">2006</option>
+                                <option value="1">2005</option>
+                                <option value="1">2004</option>
+                                <option value="1">2003</option>
+                                <option value="1">2002</option>
+                                <option value="1">2001</option>
+                                <option value="1">2000</option>
+                                <option value="1">1999</option>
+                                <option value="1">1998</option>
+                                <option value="1">1997</option>
+                                <option value="1">1996</option>
+                                <option value="1">1995</option>
+                                <option value="1">1994</option>
+                                <option value="2">1993</option>
+                                <option value="1">1992</option>
+                                <option value="1">1991</option>
+                                <option value="1">1990</option>
+                                <option value="1">1989</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div><span class="gender d-flex justify-content-between p-1 "> <label for="female">
+                                    Female</label> <input class="m-1" type="radio" name="gender" id="genderBtn1"></span>
+                        </div>
+                        <div><span class="gender d-flex justify-content-between p-1 "> <label for="male"> Male</label>
+                                <input class="m-1" type="radio" name="gender" id="genderBtn2"></span></div>
+                        <div><span class="gender d-flex justify-content-between p-1 "> <label for="child"> Child</label>
+                                <input class="m-1" type="radio" name="gender" id="childBtn"></span></div>
+                    </div>
+                    <div id="child">
+
+
+                    </div>
+
+
+                    <br>
+                    <div class="buttonA"> <a href="#" onclick="buttonSign()" class="signBtn"> Sign Up</a></div>
+                    <br>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid main">
+        <div class="row">
+            <h1 class="animate__animated animate__bounce animate__slideInLeft animate__delay-1s">
+                Welcome to SaatçıAz
+            </h1>
+        </div>
+    </div>
+
+    <div class="Our_brands row">
+        <h1 class="col-lg-12 col-md-12 col-sm-12 brandTitle">Our Brands</h1>
+    </div>
+    <div class="brands">
+        <div class="container">
+            <div class="brands_top row">
+                <div class="col-lg-4 col-md-9 col-sm-12 rolex ">
+                    <img src="./images/rolex.jpeg">
+                    <a href="./html/rolex.html" class="moreWatch">More Watch</a>
+                </div>
+                <div class="col-lg-4 col-md-9 col-sm-12 omega">
+                    <img src="./images/Omega.jpeg">
+                    <a href="./html/omega.html" class="moreWatch">More Watch</a>
+                </div>
+                <div class="col-lg-4 col-md-9 col-sm-12 patek">
+                    <img src="images/patek.jpeg">
+                    <a href="./html/patek.html" class="moreWatch">More Watch</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="brands_under row">
+                <div class="col-lg-4 col-md-9 col-sm-12 Blancpain">
+                    <img src="./images/Blancpain.jpeg">
+                    <a href="./html/Blancpain.html" class="moreWatch">More Watch</a>
+                </div>
+                <div class="col-lg-4 col-md-9 col-sm-12 audemars">
+                    <img src="./images/audemars.jpeg">
+                    <a href="./html/audemars.html" class="moreWatch">More Watch</a>
+                </div>
+                <div class="col-lg-4 col-md-9 col-sm-12 iwc">
+                    <img src="images/iwc.jpeg">
+                    <a href="./html/iwc.html" class="moreWatch">More Watch</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bottom container-fluid">
+        <div class="row">
+            <h1 class="animate__animated animate__bounce animate__bounceInLeft animate__delay-3s">Find your dream watch
+                on the leading marketplace for luxury watches.</h1>
+
+        </div>
+    </div>
+
+    <div class="container-fluid footer" id="mainFooter">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-10 footer_left">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./html/about.html">About</a></li>
+                    <li><a href="./html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-10 footer_center">
+                <ul>
+                    <li><a href=".//html/patek.html">Patek Philippe Geneve</a></li>
+                    <li><a href=".//html/audemars.html">Audemars Pigue</a></li>
+                    <li><a href=".//html/Blancpain.html">Blancpain</a></li>
+                    <li><a href=".//html/iwc.html">IWC Schaffhausen</a></li>
+                    <li><a href=".//html/rolex.html">Rolex</a></li>
+                    <li><a href=".//html/omega.html">Omega</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-10 footer_right">
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./js/nav.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
